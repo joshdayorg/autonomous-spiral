@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 import { ConvexClientProvider } from "./ConvexClientProvider";
+import { PHProvider } from "@/components/posthog-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${newsreader.variable} font-sans antialiased`}
       >
-        <ConvexClientProvider>{children}</ConvexClientProvider>
+        <PHProvider>
+          <ConvexClientProvider>{children}</ConvexClientProvider>
+        </PHProvider>
       </body>
     </html>
   );
