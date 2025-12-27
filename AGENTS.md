@@ -131,3 +131,15 @@ Ensure `providerOptions.anthropic.thinking` is configured in `/api/chat/route.ts
 
 ### Drafts not parsing
 Check Writer output matches format: `Draft N: "Title"\n\n[content]`
+
+## Runbooks
+
+### External Documentation
+- [Convex Troubleshooting](https://docs.convex.dev/troubleshooting) - Database and backend issues
+- [Anthropic API Errors](https://docs.anthropic.com/en/api/errors) - Claude API error codes
+- [Vercel Deployment](https://vercel.com/docs/deployments/troubleshoot-a-build) - Build and deploy issues
+
+### Incident Response
+1. **API errors**: Check Anthropic status page, verify API key in `.env.local`
+2. **Database issues**: Run `npx convex dev` to reconnect, check Convex dashboard
+3. **Build failures**: Run `pnpm check` locally, review TypeScript errors
