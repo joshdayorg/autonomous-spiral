@@ -10,11 +10,15 @@ pnpm dev              # Start Next.js dev server + Convex
 pnpm build            # Production build
 
 # Validation (run before commits)
-pnpm check            # TypeScript + ESLint
-pnpm check:fix        # TypeScript + ESLint with auto-fix
+pnpm check            # TypeScript + ESLint + Tests
+pnpm check:fix        # TypeScript + ESLint + Prettier auto-fix
 pnpm typecheck        # TypeScript only
 pnpm lint             # ESLint only
 pnpm lint:fix         # ESLint with auto-fix
+pnpm test             # Run unit tests
+pnpm test:watch       # Run tests in watch mode
+pnpm format           # Format all files with Prettier
+pnpm format:check     # Check formatting without writing
 ```
 
 ## Project Layout

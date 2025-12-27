@@ -1,0 +1,12 @@
+# Default owners for everything in the repo
+* @joshdayorg
+
+# Frontend components
+/components/ @joshdayorg
+
+# Backend/API
+/convex/ @joshdayorg
+/app/api/ @joshdayorg
+
+# Prompts and AI logic
+/lib/prompts/ @joshdayorg
